@@ -1,9 +1,12 @@
-# TechGear REST API - Inlämmnings uppgift
+# TechGear REST API databas - Inlämmnings uppgift
 
-## PUT /products/:id
+För VG-delen som jag gjorde valde jag att ha anpassa validering & felhantering på:
 
+* PUT /products/:id
+* POST /products
+* PUT /customers/:id
 
-## DELETE /products/:id
-
-
-## GET /customers/:id/orders
+Extra funktionaliteten jag valde är 2. Sortering av produktlistan med stigande eller sjunkande pris
+```js
+/products?sort=price_asc/desc
+```
